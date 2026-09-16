@@ -1,0 +1,15 @@
+<main>
+  <header>
+    <div class="logo">
+      <h1>Mapa de Amenazas en Vivo</h1>
+    </div>
+    <app-indicador-estado [estado]="estadoWs$ | async"></app-indicador-estado>
+  </header>
+  
+  <div class="panels-container">
+    <app-tipos-ataque></app-tipos-ataque>
+    <app-estadisticas-amenazas></app-estadisticas-amenazas>
+  </div>
+
+  <app-mapa-amenazas></app-mapa-amenazas>
+</main>
